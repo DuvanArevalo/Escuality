@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pagina predictoria de desercion escolar</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la pagina de prediccion de desercion escolar</h1>
+    <p>colegios publicos de chia</p>
+    </header>
+
+    <main>
+        <section id="resumen_de_las_predicciones">
+            <h2>Resumen de las predicciones</h2>
+            <p>En esta sección se mostrará un resumen de las predicciones realizadas por el modelo.</p>
+            <div class="indicadores">
+                <div class="indicadores">
+                    <h3>estudiantes con riego de desercion alto</h3>
+                    <p id="En esta sección se mostrará un resumen de los estudiantes con riesgo alto de deserción"></p>
+                </div>
+                <div class="indicador">
+                    <h3>estudiantes con riego de desercion medio</h3>
+                    <p id="En esta sección se mostrará un resumen de los estudiantes con riesgo medio de deserción."></p>
+                </div>
+                <div class="indicador">
+                    <h3>estudiantes con riego de desercion bajo</h3>
+                    <p id="En esta sección se mostrará un resumen de los estudiantes con riesgo bajo de deserción."></p>
+                </div>
+            </div>
+        </section>
+        <section id="lista de estudiantes en riego">
+            <h2>listado de estudiantes en riesgos</h2>
+            <div class="filtros">
+                <label for="filtrar_grado">filtrar por grado</label>
+                <select id="filtro_grado">
+                    <option value=" ">todos</option>
+                    <option value="primaria">primaria</option>
+                    <option value="secundaria">secundaria</option>
+                </select>
+                <label for="filtrar_riego">filtrar por nivel de riesgo</label>
+                <select id="filtro_riego">
+                    <option value=" ">todos </option>
+                    <option value="alto">alto</option>
+                    <option value="medio">medio</option>
+                    <option value="bajo">bajo</option>
+                </select>
+                <input type="text" id="buscar_estudiante" placeholder="Buscar estudiante por nombre">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Grado</th>
+                        <th>Nivel de riesgo</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_estudiantes">
+                    <tr>
+                        <td>datos del estudiante</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="detalles_del_estudiante" style="display: none;">
+            <h2>Detalles del estudiante</h2>
+            <div id="detalles">
+                <p id="nombre_estudiante">Nombre: </p>
+                <p id="grado_estudiante">Grado: </p>
+                <p id="nivel_riesgo_estudiante">Nivel de riesgo: </p>
+                <p id="motivos_desercion">Motivos de deserción: </p>
+            </div>
+            <button olclick="ocultarDetalles()">volver a la lista</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Predicción de Deserción Escolar. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

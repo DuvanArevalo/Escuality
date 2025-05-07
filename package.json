@@ -1,0 +1,11 @@
+{
+  "name": "desercion_escolar",
+  "version": "1.0.0",
+  "description": "esta pagina sera usada para predecir la desercion escolar en primaria y bachillerato de los colegios publicos del municipio de chia",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start"
+  },
+  "author": "Daniel Babativa Duvan Londoño",
+  "license": "ISC"
+}
